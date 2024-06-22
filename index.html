@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin-Library</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1><span>library </span>tracker</h1>
+      </div>
+
+      <div class="add-books">
+        <h3>Add-Books</h3>
+        <form action="">
+          <div>
+            <label for="bookName">Book</label><br />
+            <input type="text" id="bookName" />
+          </div>
+          <div>
+            <label for="author">Author</label><br />
+            <input type="text" id="author" />
+          </div>
+          <div>
+            <label for="pages">Pages</label><br />
+            <input type="text" id="pages" />
+          </div>
+          <div>
+            <label for="c-page">Current page</label><br />
+            <input type="text" id="c-page" />
+          </div>
+          <div>
+            <label for="read">Read already?</label>
+            <input type="checkbox" id="read" />
+          </div>
+        </form>
+      </div>
+      <div class="library">
+        <h3>Your Books</h3>
+        <div class="books"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
