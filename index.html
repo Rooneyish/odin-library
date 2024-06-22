@@ -12,42 +12,49 @@
   </head>
   <body>
     <main>
-      <div class="header">
-        <h1><span>library </span>tracker</h1>
+      <div class="header-books">
+        <div class="header">
+          <h1><span>book</span> tracker</h1>
+          <div class="your-books">
+            <h3>Your Books</h3>
+            <div class="books">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div>
       </div>
-
       <div class="add-books">
-        <h3>Add-Books</h3>
+        <h3>Add Books</h3>
         <form action="">
           <div>
-            <label for="bookName">Book<br />
-              <input type="text" id="bookName" /></label>
-            
+            <label for="bookName"
+              >Book<br />
+              <input type="text" id="bookName"
+            /></label>
           </div>
           <div>
-            <label for="author">Author<br />
+            <label for="author"
+              >Author<br />
               <input type="text" id="author" />
             </label>
           </div>
           <div>
-            <label for="pages">Pages<br />
+            <label for="pages"
+              >Pages<br />
               <input type="text" id="pages" />
             </label>
           </div>
           <div>
-            <label for="c-page">Current page<br />
+            <label for="c-page"
+              >Current page<br />
               <input type="text" id="c-page" />
             </label>
           </div>
-          <div style="display: flex; align-items: center; gap: 20px;">
+          <div style="display: flex; align-items: center; gap: 20px">
             <label for="read">Read already?</label>
-            <input type="checkbox" id="read" style="border-radius: 50%;" />
+            <input type="checkbox" id="read" style="border-radius: 50%" />
           </div>
         </form>
-      </div>
-      <div class="library">
-        <h3>Your Books</h3>
-        <div class="books"></div>
       </div>
     </main>
     <script src="script.js"></script>
