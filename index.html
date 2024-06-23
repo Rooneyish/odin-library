@@ -14,22 +14,21 @@
     <main>
       <div class="header-books">
         <div class="header">
-          <h1><span>book</span> tracker</h1>
+          <h1><span>book</span>Tracker</h1>
           <div class="your-books">
             <h3>Your Books</h3>
-            <div class="books">
-              <div class="card"></div>
+            <div id="books">
             </div>
           </div>
         </div>
       </div>
       <div class="add-books">
         <h3>Add Books</h3>
-        <form action="">
+        <form action="" id="bookForm">
           <div>
-            <label for="bookName"
+            <label for="name"
               >Book<br />
-              <input type="text" id="bookName"
+              <input type="text" id="name"
             /></label>
           </div>
           <div>
@@ -41,19 +40,27 @@
           <div>
             <label for="pages"
               >Pages<br />
-              <input type="text" id="pages" />
+              <input type="text" id="pages" required pattern="[0-9]+" />
             </label>
           </div>
-          <div>
-            <label for="c-page"
-              >Current page<br />
-              <input type="text" id="c-page" />
-            </label>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              width: 100%;
+              display: flex;
+            "
+          >
+            <label for="read" style="width: 80%">Read already?</label>
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="read"
+              style="border-radius: 50%"
+            />
           </div>
-          <div style="display: flex; align-items: center; gap: 20px">
-            <label for="read">Read already?</label>
-            <input type="checkbox" id="read" style="border-radius: 50%" />
-          </div>
+          <button type="submit">Add Book</button>
         </form>
       </div>
     </main>
